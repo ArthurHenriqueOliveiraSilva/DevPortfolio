@@ -1,0 +1,262 @@
+```css
+/* Configurações gerais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    background-color: #101d35;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 36px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #35a7ff;
+}
+
+.subtitulo {
+    margin-top: 5px;
+    color: #d5deed;
+}
+
+/* Menu */
+
+.menu {
+    background-color: #1b2d4b;
+    padding: 15px 0;
+}
+
+.menu .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #35a7ff;
+}
+
+/* Apresentação */
+
+.apresentacao {
+    background-color: white;
+    margin: 30px 0;
+    padding: 35px;
+    border-radius: 8px;
+    border-left: 5px solid #2589e8;
+}
+
+.apresentacao h2 {
+    color: #101d35;
+    margin-bottom: 10px;
+    font-size: 27px;
+}
+
+.apresentacao p {
+    color: #555;
+}
+
+/* Títulos das seções */
+
+.titulo-secao {
+    color: #101d35;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+/* Grade de notícias */
+
+.grade-noticias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+/* Cartões */
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.conteudo-card {
+    padding: 20px;
+}
+
+.categoria {
+    display: inline-block;
+    color: #1674c8;
+    background-color: #e8f3ff;
+    padding: 4px 9px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card h3 {
+    color: #101d35;
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 13px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+
+.botao {
+    display: inline-block;
+    background-color: #1674c8;
+    color: white;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #105596;
+}
+
+/* Sobre o portal */
+
+.sobre {
+    background-color: white;
+    padding: 30px;
+    margin: 35px 0;
+    border-radius: 8px;
+}
+
+.sobre h2 {
+    color: #101d35;
+    margin-bottom: 12px;
+}
+
+.sobre p {
+    color: #555;
+}
+
+/* Rodapé */
+
+.rodape {
+    background-color: #101d35;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.rodape h2 {
+    color: #35a7ff;
+    margin-bottom: 5px;
+}
+
+.direitos {
+    color: #bdc8d9;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+/* Responsividade para tablets */
+
+@media (max-width: 850px) {
+
+    .grade-noticias {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Responsividade para celulares */
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .menu .container {
+        gap: 12px 20px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .apresentacao {
+        padding: 25px;
+    }
+
+    .apresentacao h2 {
+        font-size: 23px;
+    }
+
+    .grade-noticias {
+        grid-template-columns: 1fr;
+    }
+
+    .card img {
+        height: 220px;
+    }
+
+    .sobre {
+        padding: 25px;
+    }
+
+}
+```
